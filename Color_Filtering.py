@@ -12,11 +12,11 @@ cv.namedWindow("Trackbar")
 
 # Senin değişken isimlerini daha net hale getirdik (azMavi -> minMavi)
 cv.createTrackbar("minMavi", "Trackbar", 0, 255, nothing)
-cv.createTrackbar("maxMavi", "Trackbar", 0, 255, nothing)
+cv.createTrackbar("maxMavi", "Trackbar", 255, 255, nothing)
 cv.createTrackbar("minYesil", "Trackbar", 0, 255, nothing)
-cv.createTrackbar("maxYesil", "Trackbar", 0, 255, nothing)
+cv.createTrackbar("maxYesil", "Trackbar", 255, 255, nothing)
 cv.createTrackbar("minKirmizi", "Trackbar", 0, 255, nothing)
-cv.createTrackbar("maxKirmizi", "Trackbar", 0, 255, nothing)
+cv.createTrackbar("maxKirmizi", "Trackbar", 255, 255, nothing)
 
 # Read video
 takip = cv.VideoCapture("takip.mp4")
@@ -52,6 +52,7 @@ while True:
     # Exit with "q"
     if cv.waitKey(20) & 0xFF == ord("q"):
         break
+
 
 
 
