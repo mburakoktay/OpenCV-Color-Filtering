@@ -10,5 +10,5 @@ dinamik olarak filtrelemeyi sağlar.
 
 ## Nasıl Çalıştırılır?
 1. OpenCV kütüphanesini indirin: `pip install opencv-python`
-2. Kodu çalıştırın: `python main.py`
+2. Kodu çalıştırın: `Color_Filtering.py`
 3. Trackbar üzerinden renk aralıklarını ayarlayarak nesneleri filtreleyin.
