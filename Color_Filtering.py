@@ -22,6 +22,8 @@ cv.createTrackbar("maxKirmizi", "Trackbar", 255, 255, nothing)
 takip = cv.VideoCapture("takip.mp4")
 
 while True:
+    frame = cv.resize(frame, (0, 0), fx=0.5, fy=0.5)
+    
     kontrol, frame = takip.read()
 
     
@@ -52,6 +54,7 @@ while True:
     # Exit with "q"
     if cv.waitKey(20) & 0xFF == ord("q"):
         break
+
 
 
 
